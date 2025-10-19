@@ -90,8 +90,11 @@ for epoch in range(num_epochs):
 
         # Teacher 前向（offload 自动管理）
         with torch.no_grad():
-            teacher_logits = teacher(input_ids=input_ids, attention_mask=attn_mask).logits / temperature
-
+            input_ids_teacher = input_ids.to(teacher.device)
+            attn_mask_teacher = attn_mask.to(teacher.device)
+            teacher_logits = teacher(input_ids=input_ids_teacher, attention_mask=attn_mask_teacher).logits / temperature
+            
+        teacher_logits = teacher_logits.to("cpu")
         # Student 前向
         student_logits = student(input_ids=input_ids, attention_mask=attn_mask).logits / temperature
 
