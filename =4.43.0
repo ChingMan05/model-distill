@@ -1,0 +1,24 @@
+Looking in indexes: http://mirrors.aliyun.com/pypi/simple
+Collecting transformers
+  Downloading http://mirrors.aliyun.com/pypi/packages/71/d3/c16c3b3cf7655a67db1144da94b021c200ac1303f82428f2beef6c2e72bb/transformers-4.57.1-py3-none-any.whl (12.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.0/12.0 MB 6.1 MB/s  0:00:01
+Requirement already satisfied: accelerate in /root/miniconda3/envs/distill/lib/python3.10/site-packages (1.10.1)
+Requirement already satisfied: deepspeed in /root/miniconda3/envs/distill/lib/python3.10/site-packages (0.18.0)
+Requirement already satisfied: datasets in /root/miniconda3/envs/distill/lib/python3.10/site-packages (4.2.0)
+Requirement already satisfied: filelock in /root/miniconda3/envs/distill/lib/python3.10/site-packages (from transformers) (3.20.0)
+Requirement already satisfied: huggingface-hub<1.0,>=0.34.0 in /root/miniconda3/envs/distill/lib/python3.10/site-packages (from transformers) (0.35.3)
+Requirement already satisfied: numpy>=1.17 in /root/miniconda3/envs/distill/lib/python3.10/site-packages (from transformers) (1.26.4)
+Requirement already satisfied: packaging>=20.0 in /root/miniconda3/envs/distill/lib/python3.10/site-packages (from transformers) (25.0)
+Requirement already satisfied: pyyaml>=5.1 in /root/miniconda3/envs/distill/lib/python3.10/site-packages (from transformers) (6.0.3)
+Requirement already satisfied: regex!=2019.12.17 in /root/miniconda3/envs/distill/lib/python3.10/site-packages (from transformers) (2025.9.18)
+Requirement already satisfied: requests in /root/miniconda3/envs/distill/lib/python3.10/site-packages (from transformers) (2.32.5)
+Requirement already satisfied: tokenizers<=0.23.0,>=0.22.0 in /root/miniconda3/envs/distill/lib/python3.10/site-packages (from transformers) (0.22.1)
+Requirement already satisfied: safetensors>=0.4.3 in /root/miniconda3/envs/distill/lib/python3.10/site-packages (from transformers) (0.6.2)
+Requirement already satisfied: tqdm>=4.27 in /root/miniconda3/envs/distill/lib/python3.10/site-packages (from transformers) (4.67.1)
+Requirement already satisfied: fsspec>=2023.5.0 in /root/miniconda3/envs/distill/lib/python3.10/site-packages (from huggingface-hub<1.0,>=0.34.0->transformers) (2025.9.0)
+Requirement already satisfied: hf-xet<2.0.0,>=1.1.3 in /root/miniconda3/envs/distill/lib/python3.10/site-packages (from huggingface-hub<1.0,>=0.34.0->transformers) (1.1.10)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /root/miniconda3/envs/distill/lib/python3.10/site-packages (from huggingface-hub<1.0,>=0.34.0->transformers) (4.15.0)
+Requirement already satisfied: psutil in /root/miniconda3/envs/distill/lib/python3.10/site-packages (from accelerate) (7.1.0)
+Collecting torch>=2.0.0 (from accelerate)
+  Downloading http://mirrors.aliyun.com/pypi/packages/58/1d/fd1e88ae0948825efcab7dd66d12bec23f05d4d38ed81573c8d453c14c06/torch-2.9.0-cp310-cp310-manylinux_2_28_x86_64.whl (899.8 MB)
+     ━━━━━━━━━━━━━                            298.1/899.8 MB 5.0 MB/s eta 0:02:01
