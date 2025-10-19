@@ -1,6 +1,6 @@
 {
   "teacher_model": "/root/autodl-tmp/models/qwen2.5-14b",
-  "student_model": "/root/autodl-tmp/models/qwen2.5-4b",
+  "student_model": "/root/autodl-tmp/models/qwen2.5-3b-instruct",
   "dataset_path": "dataset/alpaca_gpt4.json",
   "output_dir": "output_distill_general",
   "batch_size": 2,
