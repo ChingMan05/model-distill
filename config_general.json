@@ -1,0 +1,18 @@
+{
+  "teacher_model": "/root/autodl-tmp/models/qwen2.5-14b",
+  "student_model": "/root/autodl-tmp/models/qwen2.5-4b",
+  "dataset_path": "dataset/alpaca_gpt4.json",
+  "output_dir": "output_distill_general",
+  "batch_size": 2,
+  "learning_rate": 5e-5,
+  "num_train_epochs": 2,
+  "temperature": 2.0,
+  "alpha_ce": 0.7,
+  "alpha_hard": 0.3,
+  "max_length": 512,
+  "gradient_accumulation_steps": 8,
+  "save_steps": 500,
+  "logging_steps": 100,
+  "fp16": true,
+  "device": "cuda"
+}
