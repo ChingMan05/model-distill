@@ -11,7 +11,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 # ==================== 路径配置 ====================
 teacher_path = "/root/autodl-tmp/models/Qwen2-7B"
 student_original_path = "/root/autodl-tmp/models/Qwen2-1.5B"
-student_distilled_path = "./distilled_qwen2_1.5B_fix"
+student_distilled_path = "/root/autodl-tmp/model-distill/distilled_qwen2_1.5B_full_20251023_103726"
 dataset_path = "/root/autodl-tmp/datasets/wikitext-2-raw-v1"
 
 device = "cuda" if torch.cuda.is_available() else "cpu"

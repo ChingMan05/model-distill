@@ -1,0 +1,19 @@
+# Ignore model checkpoints and large data
+distilled_*/
+saved_models/
+eval_results/
+logs_*/
+hf_cache/
+apex/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore temporary files
+*.log
+*.tmp
+*.bak
+*.swp
